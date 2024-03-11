@@ -1,13 +1,15 @@
 [package]
-name = "telegram"
+name = "telegram_framework"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-homepage = "https://github.com/khusnetdinov/telegram"
-repository = "https://github.com/khusnetdinov/telegram"
+homepage = "https://github.com/khusnetdinov/telegram_framework"
+repository = "https://github.com/khusnetdinov/telegram_framework"
 authors = ["Marat Khusnetdinov <khusnetdinov@gmail.com>"]
 
-[dependencies]
+[dependencies.telegram_bots_api]
+path = "../telegram_bots_api"
+features = ["sync", "async"]
 
 [[example]]
 name = "playground"
